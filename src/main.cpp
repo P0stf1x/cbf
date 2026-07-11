@@ -5,6 +5,7 @@
 
 #include "code_block.hpp"
 #include "parser.hpp"
+#include "runner.hpp"
 
 int main(int argc, char** argv) {
     if (argc != 2) {
@@ -26,7 +27,10 @@ int main(int argc, char** argv) {
 
     BFParser parser(input);
     CodeBlock cb = parser.parse();
-    cb.run(0);
+
+    BFMemory mem;
+    BFRunner runner;
+    runner.run(&cb, &mem);
 
     exit(0);
 }

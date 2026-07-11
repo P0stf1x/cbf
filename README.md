@@ -1,6 +1,6 @@
 # Compiler for BrainFuck
 
-Interpreter/Compiler/JIT compiler for Brainfuck written in C++ (eventually. as of now it's just a lexer/parser)
+Interpreter for Brainfuck written in C++. Eventually it will also support Compilation/JIT compilation
 
 ## Usage
 

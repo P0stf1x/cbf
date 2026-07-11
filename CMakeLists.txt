@@ -10,8 +10,8 @@ add_compile_options(-Wall -Wextra)
 add_executable(
     ${PROJECT_NAME}
     src/main.cpp
-    src/code_block.cpp
     src/parser.cpp
+    src/runner.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE include)

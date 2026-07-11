@@ -44,42 +44,36 @@ CodeBlock BFParser::parse_current_block(size_t starting_i, bool outer_block) {
                     result.emplace_back(BFOperation{
                         .type = BFOperationType::POINTER_INCREMENT,
                         .count = 1,
-                        .c = '>',
                     });
                     break;
                 case '<':
                     result.emplace_back(BFOperation{
                         .type = BFOperationType::POINTER_DECREMENT,
                         .count = 1,
-                        .c = '<',
                     });
                     break;
                 case '+':
                     result.emplace_back(BFOperation{
                         .type = BFOperationType::DATA_INCREMENT,
                         .count = 1,
-                        .c = '+',
                     });
                     break;
                 case '-':
                     result.emplace_back(BFOperation{
                         .type = BFOperationType::DATA_DECREMENT,
                         .count = 1,
-                        .c = '-',
                     });
                     break;
                 case '.':
                     result.emplace_back(BFOperation{
                         .type = BFOperationType::OUTPUT,
                         .count = 1,
-                        .c = '.',
                     });
                     break;
                 case ',':
                     result.emplace_back(BFOperation{
                         .type = BFOperationType::INPUT,
                         .count = 1,
-                        .c = ',',
                     });
                     break;
             }

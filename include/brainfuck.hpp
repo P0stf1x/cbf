@@ -12,7 +12,4 @@ enum class BFOperationType {
 struct BFOperation {
     enum BFOperationType type;
     size_t count;
-    char c;
-    //   ^ temp for now, just to make printing block structure easier
-    // TODO: remove after implementing actual BF runner
 };
