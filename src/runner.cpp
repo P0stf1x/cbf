@@ -30,7 +30,7 @@ void BFRunner::run_block(CodeBlock* cb, BFMemory* mem) {
                     std::cout << mem->data[mem->head];
                     break;
                 case BFOperationType::INPUT:
-                    std::cin >> mem->data[mem->head];
+                    mem->data[mem->head] = std::cin.get();
                     break;
                 default:
                     break;
