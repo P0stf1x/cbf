@@ -9,7 +9,6 @@
 #include "code_block.hpp"
 #include "memory.hpp"
 #include "brainfuck.hpp"
-#include "windows_compatibility.hpp"
 
 void BFRunner::run_block(CodeBlock* cb, BFMemory* mem) {
     for (auto& element : *cb) {

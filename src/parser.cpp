@@ -8,6 +8,7 @@
 #include "parser.hpp"
 #include "code_block.hpp"
 #include "brainfuck.hpp"
+#include "windows_compatibility.hpp"
 
 BFParser::BFParser(std::string input)
     : input(input) {};
