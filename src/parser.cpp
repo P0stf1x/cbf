@@ -33,7 +33,7 @@ CodeBlock BFParser::parse_current_block(size_t starting_i, bool outer_block) {
                     break;
                 } else {
                     std::cerr << "Closed non existant loop at symbol " << i << std::endl;
-                    exit(-2);
+                    exit(-3);
                 }
             }
         }
