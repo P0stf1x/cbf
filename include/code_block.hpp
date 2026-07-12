@@ -2,6 +2,7 @@
 
 #include <variant>
 #include <vector>
+#include <memory>
 
 #include "brainfuck.hpp"
 

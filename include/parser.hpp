@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <stddef.h>
 
 #include "code_block.hpp"
 

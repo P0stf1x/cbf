@@ -1,5 +1,9 @@
 #include <variant>
 #include <iostream>
+#include <array>
+#include <memory>
+#include <type_traits>
+#include <vector>
 
 #include "runner.hpp"
 #include "code_block.hpp"

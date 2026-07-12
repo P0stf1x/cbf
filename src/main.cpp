@@ -2,10 +2,12 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <stdlib.h>
 
 #include "code_block.hpp"
 #include "parser.hpp"
 #include "runner.hpp"
+#include "memory.hpp"
 
 int main(int argc, char** argv) {
     if (argc != 2) {
