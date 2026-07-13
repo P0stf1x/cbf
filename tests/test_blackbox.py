@@ -9,7 +9,7 @@ EXE = os.environ.get("BF_EXE", None) # type: str # pyright: ignore[reportAssignm
 if EXE is None:
     if os.name == "nt":
         # Windows
-        EXE = "./build/cbf.exe"
+        EXE = "./build/Release/cbf.exe"
     else:
         # Linux/macOS
         EXE = "./build/cbf"

@@ -66,3 +66,7 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# pytest
+__pycache__/
+.pytest_cache/

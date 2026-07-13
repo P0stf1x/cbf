@@ -22,3 +22,17 @@ target_include_directories(${PROJECT_NAME} PRIVATE include)
 
 include(CTest)
 enable_testing()
+
+find_package(Python3 COMPONENTS Interpreter REQUIRED)
+
+add_test(
+  NAME blackbox_tests
+  COMMAND ${Python3_EXECUTABLE} -m pytest
+          ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_blackbox.py -v
+  WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+)
+
+set_tests_properties(blackbox_tests PROPERTIES
+  ENVIRONMENT "BF_EXE=$<TARGET_FILE:${PROJECT_NAME}>"
+  LABELS "blackbox"
+)
