@@ -50,7 +50,7 @@ jobs:
 
       - name: Fix executable bit (Unix)
         if: runner.os != 'Windows'
-        run: chmod +x build/bin/cbf
+        run: chmod +x ./build/cbf
 
       - name: Set up Python
         uses: actions/setup-python@v6
