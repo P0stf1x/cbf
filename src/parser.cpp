@@ -37,7 +37,7 @@ CodeBlock BFParser::parse_current_block(size_t starting_i, bool outer_block) {
                     break;
                 } else {
                     std::cerr << "Closed non existant loop at symbol " << i << std::endl;
-                    exit(-3);
+                    exit(3);
                 }
             }
         }
@@ -89,7 +89,7 @@ CodeBlock BFParser::parse_current_block(size_t starting_i, bool outer_block) {
     if (depth > 0) {
         std::cerr << "Loop at symbol " << starting_i << " not closed" << std::endl;
         std::cerr << "FIXME: loop started not at 0" << std::endl; // FIXME: uhhh this runs on outer_block, so starting_i is 0
-        exit(-2);
+        exit(2);
     }
 
     return CodeBlock(std::move(result));

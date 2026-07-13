@@ -52,9 +52,9 @@ def test_blackbox_not_closed_loop():
         text=True,
     )
 
-    assert result.returncode == 254, (
+    assert result.returncode == 2, (
         f"{case} failed with exit code {result.returncode}\n"
-        f"expected exit code 254/(-2)"
+        f"expected exit code 2"
     )
 
 def test_blackbox_not_opened_loop():
@@ -66,7 +66,7 @@ def test_blackbox_not_opened_loop():
         text=True,
     )
 
-    assert result.returncode == 253, (
+    assert result.returncode == 3, (
         f"{case} failed with exit code {result.returncode}\n"
-        f"expected exit code 253/(-3)"
+        f"expected exit code 3"
     )
