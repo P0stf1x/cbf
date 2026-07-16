@@ -10,6 +10,7 @@ add_executable(
     src/main.cpp
     src/parser.cpp
     src/runner.cpp
+    src/compiler/aarch64.cpp
 )
 
 if(MSVC)
