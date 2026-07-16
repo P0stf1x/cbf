@@ -8,9 +8,11 @@ class Compiler {
     protected:
         std::string assembly;
 
-        void compile_block(CodeBlock* starting_block);
+        virtual void compile_block(CodeBlock* starting_block) = 0;
 
     public:
+        virtual ~Compiler() = default;
+
         void compile(CodeBlock* starting_block) {
             this->compile_block(starting_block);
         };
